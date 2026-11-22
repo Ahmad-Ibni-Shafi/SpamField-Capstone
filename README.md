@@ -91,6 +91,20 @@ npm run web
 
 Scan the displayed QR code with Expo Go, or use an emulator/simulator.
 
+## Build an Installable Android APK
+
+For a standalone APK suitable for a college demo:
+
+```bash
+npx eas-cli@latest login
+npx eas-cli@latest build --platform android --profile preview
+```
+
+The build runs in Expo's cloud. After it finishes, open the link printed by the
+CLI or use the build link in the Expo account dashboard. Download the `.apk`,
+transfer it to an Android phone, and tap the file to install it. Android may ask
+you to allow installation from your browser or file manager.
+
 ## Project Structure
 
 ```text
